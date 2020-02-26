@@ -1,0 +1,4 @@
+h3= "csvファイルから登録"
+input#avatar accept=".csv,.txt" name="word_file" type="file"
+/ =simple_form_for(@book, url: book_import_books_path) do |f|
+/ 	= f.submit "インポート", :class => 'btn btn-primary'
