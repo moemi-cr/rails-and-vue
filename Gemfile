@@ -33,6 +33,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails', '4.3.1'
 gem 'simple_form'
+gem 'rails-i18n', '~> 5.1'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -1,4 +1,14 @@
-h3= "csvファイルから登録"
-input#avatar accept=".csv,.txt" name="word_file" type="file"
+p= "csvファイルから登録"
+/ input#avatar accept=".csv,.txt" name="word_file" type="file"
 / =simple_form_for(@book, url: book_import_books_path) do |f|
 / 	= f.submit "インポート", :class => 'btn btn-primary'
+= simple_form_for(@book, url: book_import_books_path ) do |f|
+	= f.submit "import", :class => 'btn btn-primary'
+
+p= "直接入力"
+= simple_form_for @book do |f|
+	= f.input :name
+	= f.input :ja
+	= f.input :en
+	= f.button :button, 'add item'
+	= f.submit "create", :class => 'btn btn-primary'
