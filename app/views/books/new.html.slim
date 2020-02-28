@@ -10,5 +10,5 @@ p= "直接入力"
 	= f.input :name
 	= f.input :ja
 	= f.input :en
-	= f.button :button, 'add item'
+	= f.button :button, 'add item', input_html: {id: 'add_item'}
 	= f.submit "create", :class => 'btn btn-primary'
