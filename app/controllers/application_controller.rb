@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
     def index
-        aaa = "sssssss";
+        aaa = "sssssssssss";
 	end
 end
