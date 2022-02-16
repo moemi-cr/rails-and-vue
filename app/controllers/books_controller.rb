@@ -31,6 +31,9 @@ class BooksController < ApplicationController
 				book.save
 			end
 		end
+
+		aaa = "aaaaa";
+
 		redirect_to root_path
 	end
 end
